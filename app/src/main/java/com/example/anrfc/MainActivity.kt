@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
     fun ANR(view: View)
     {
         val intent = Intent(this, ANRActivity::class.java).apply{}
+        //Switching to main thread
         startActivity(intent)
     }
     fun FC(view: View)
     {
+        //FC this app
         throw IllegalStateException("This is an intentional exception");
     }
 }

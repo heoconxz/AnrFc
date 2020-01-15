@@ -9,6 +9,7 @@ class ANRActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anr)
+        //This loop cause ANR
         while(true)
         {
             //Log.d("Tag","--------In infinite loop--------")
